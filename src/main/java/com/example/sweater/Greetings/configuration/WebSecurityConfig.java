@@ -15,6 +15,8 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    //Here we can create private final UserService and after that create constructor and
+    // Spring will inject UserService to our WebSecurityConfig
     @Autowired
     private UserService userService;
 
